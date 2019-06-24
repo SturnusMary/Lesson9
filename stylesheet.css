@@ -125,16 +125,21 @@ form {
     font-size: 13px;
     font-family: 'Rajdhani', sans-serif;
     background-color: #fbc315;
+   
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
+    cursor: pointer;
 }
 .button .reset {
     background: none;
     color: orange;
     width: auto;
+    padding-left: 35px;
+    position: relative;
+    
 }
 
 .submit {
@@ -145,11 +150,44 @@ input[readonly] ~ label {
         font-size: 10px;
         color: orange;
 }
-
-
-
 .reset:focus,
 button:focus {
     outline: none;
     
+}
+.st0 {
+    fill: #4CAF50;
+}
+.st1 {
+    fill: #FBC315;
+}
+svg {
+    width: 25px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0;
+}
+
+.reset:hover ~ svg {
+    transform: rotate(360deg) scale(1.2);
+    -webkit-transform: rotate(360deg) scale(1.2);
+    -moz-transform: rotate(360deg) scale(1.2);
+    -ms-transform: rotate(360deg) scale(1.2);
+    -o-transform: rotate(360deg) scale(1.2);
+    opacity: 1;
+}
+.reset ~ svg {
+    transition: all 0.7s ease-in-out;
+    -webkit-transition: all 0.7s ease-in-out;
+    -moz-transition: all 0.7s ease-in-out;
+    -ms-transition: all 0.7s ease-in-out;
+    -o-transition: all 0.7s ease-in-out;
+}
+input::placeholder {
+    opacity: 0;
+    color: #978475;
+}
+input:focus::placeholder {
+    opacity: 0.4;
 }
