@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="stylesheet.css">
+        <title>Form</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="flex">
+                <div class="img">
+                    <div class="title">Register</div>
+                </div>
+                <div class="card">
+                    <form action="" method="POST">
+                        <div>
+                            <input id="username" name="fname" type="text" required="required">
+                            <label for="username">First Name</label>
+                        </div>
+                        <div>
+                            <input
+                                id="usersname"
+                                name="sname"
+                                type="text"
+                                required>
+                            <label for="usersname">Surname</label>
+                        </div>
+                        <div>
+                            <input
+                                type="text"
+                                name="bday"
+                                required>
+                            <label for="birthdate">Birthdate</label> <!-- placeholder="mm/dd/yyyy" -->
+                            <!-- or date -->
+
+                        </div>
+                        <div>
+                            <input
+                                type="number"
+                                min="1"
+                                max="100"
+                                step="1"
+                                id="age"
+                                name="age"
+                                required>
+                            <label for="age">Age</label>
+
+                            <!-- or select -->
+                        </div>
+                        <div>
+                            <input
+                                type="tel"
+                                name="phone"
+                                id="phone"
+                                required
+                                autocomplete="off">
+                            <label for="phone">Phone nunber</label>  <!-- placeholder="+380-00-000-00-00" -->
+
+                        </div>
+                        <div>
+                            <input
+                                type="mail"
+                                name="mymail"
+                                id="mail"
+                                required readonly value="shpakmaryna2014@gmail.com">
+                            <label for="mail">Email</label>
+
+                        </div>
+                        <div>
+                            <input
+                                type="password"
+                                id="password1"
+                                name="passwordfirst"
+                                required>
+                            <label for="password1">Password</label>
+
+                        </div>
+                        <div>
+                            <input
+                                type="password"
+                                id="password2"
+                                name="passwordsecond"
+                                required>
+                            <label for="password2">Confirm password</label>
+                        </div>
+                        <div class="button">
+                                <input class="reset" type="reset" value="Reset"></button>
+                                <input class="submit" type="submit" value="Create in account"></button>
+                        </div>
+                    </form>
+
+                    <!-- <div class="button">
+                        <button class="reset" type="reset">Reset</button>
+                         <button class="submit" type="submit">Create in account</button>
+                    </div> -->
+                    
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
