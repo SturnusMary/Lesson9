@@ -151,6 +151,11 @@ input[readonly] ~ label {
         top: -8px;
         font-size: 10px;
         color: orange;
+        transform: none;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
 }
 .reset:focus,
 button:focus {
